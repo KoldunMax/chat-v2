@@ -1,0 +1,37 @@
+.invite-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+}
+
+.invite-form__input,
+.invite-form__file {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.invite-form__input:focus,
+.invite-form__file:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.invite-form__button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  transition: .3s all;
+}
+
+.invite-form__button:hover {
+  opacity: 1;
+}

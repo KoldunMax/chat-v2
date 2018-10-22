@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Chat</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+    crossorigin="anonymous"
+  >
+  <link rel="stylesheet" href="normalize">
+  <link rel="stylesheet" href="common">
+  <link rel="stylesheet" href="chat">
+  <link rel="stylesheet" href="media">
+  <link rel="stylesheet" href="inviteForm">
+  <script src="/socket.io/socket.io.js" defer></script>
+  <script src="client.js" type="text/javascript" defer></script>
+</head> 
+<body>
+  <div class="chat-wrapper">
+    <div class='people-list people-list_show'>
+      <div class="close-menu-media">
+        <div class="search">
+          <input
+            type="text"
+            placeholder="search"
+            class="search__item"
+          /> 
+          <i class="fa fa-search"></i>
+        </div>
+        <i class="fas fa-arrow-circle-left close-icon-menu"></i>
+      </div>
+      <ul class="list">
+      </ul>
+      <div class='my-account'>
+        YOU
+      </div>
+    </div>
+    <div class='chat'>
+      <div class='menu-media'>
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="chat-history">
+        <ul class="chat-list">
+        </ul>
+      </div>
+      <div class="chat-message">
+        <input
+          type="text"
+          class="chat-message__text"
+          placeholder="Click here to write something..."
+          disabled
+        >
+        <input
+          type="button"
+          class="chat-message__button"
+          value="Send"
+        >
+      </div>
+    </div>
+  </div>
+</body>
+</html>

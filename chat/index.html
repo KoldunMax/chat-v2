@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Chat</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+    crossorigin="anonymous"
+  >
+  <link rel="stylesheet" href="normalize">
+  <link rel="stylesheet" href="common">
+  <link rel="stylesheet" href="inviteForm">
+  <script src="/socket.io/socket.io.js" defer></script>
+  <script src="form.js" type="text/javascript" defer></script>
+</head> 
+<body>
+  <form
+    action="/chat"
+    enctype="multipart/form-data"
+    method="POST"
+    class="invite-form"
+  >
+  <h1>Login</h1>
+  <label for="nickname"><b>NickName</b></label>
+  <input
+    type="text"
+    class="invite-form__input"
+    name="nickname"
+    placeholder="Enter nickname"
+    pattern="^(?=.*[A-Za-z0-9]$)[A-Za-z][A-Za-z\d.-]{0,19}$"
+    required
+  >
+  <label for="avatar"><b>Avatar</b></label>
+  <input
+    type="file"
+    name="avatar"
+    class="invite-form__file"
+  >
+  <input
+    type="submit"
+    value="Enter"
+    class="invite-form__button"
+  >
+</form>
+</body>
+</html>

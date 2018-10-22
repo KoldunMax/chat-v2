@@ -1,0 +1,62 @@
+@media all and (max-width: 768px) {
+  .chat-wrapper {
+    transition: 1s padding;
+    padding: 20px;
+  }
+  .people-list {
+    top: 0;
+    left: 0;
+    width: 0px;
+    position: absolute;
+    margin: 20px;
+    border-radius: 0px;
+    z-index: 1;
+    height: 280px;
+    overflow-y: auto;
+    border-bottom-right-radius: 10px;
+    transition: .3s all;
+  }
+
+  .people-list .search {
+    padding: 20px 0px 20px 20px;
+  }
+
+  .menu-media {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    background-color: #5db661;
+    justify-content: flex-start;
+    padding: 10px 10px 10px 10px;
+    cursor: pointer;
+  }
+
+  .close-menu-media {
+    display: flex;
+    align-items: center;
+  }
+
+  .close-icon-menu {
+    display: inline-block;
+    background-color: #6a6c75;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .chat-history {
+    padding: 10px 10px 5px 10px;
+  }
+  
+  .chat-message {
+    padding: 10px;
+  }
+  
+  .chat-message__text {
+    padding: 10px;
+  }
+  .chat-message__button {
+    padding: 10px;
+  }
+}
